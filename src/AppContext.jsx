@@ -21,7 +21,7 @@ export const AppProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    document.body.classList.toggle("dark", !darkMode);
+    document.body.classList.toggle("light", !darkMode);
   }, [darkMode]);
 
   return (
