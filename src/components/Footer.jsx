@@ -84,7 +84,7 @@ const Footer = () => {
                 Our Terms
               </a>
               <a
-                href="/privacy-policy"
+                href="/policy"
                 className="text-Gray hover:underline font-custom"
               >
                 Privacy & Policy

@@ -5,8 +5,9 @@ import SignUp from "./pages/Signup";
 import Navbar from "./components/Navbar";
 import CareersForm from "./pages/CareersForm";
 import ContactUs from "./pages/ContactUs";
-import About from './pages/About';
-import NotFound from './pages/NotFound'; // Import NotFound component
+import About from "./pages/About";
+import NotFound from "./pages/NotFound"; // Import NotFound component
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 export default function App() {
   return (
@@ -19,7 +20,9 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="/careers" element={<CareersForm />} />
         <Route path="/contact" element={<ContactUs />} />
-        <Route path="*" element={<NotFound />} /> {/* Catch-all route for 404 */}
+        <Route path="/policy" element={<PrivacyPolicy />} />
+        <Route path="*" element={<NotFound />} />{" "}
+        {/* Catch-all route for 404 */}
       </Routes>
     </BrowserRouter>
   );
