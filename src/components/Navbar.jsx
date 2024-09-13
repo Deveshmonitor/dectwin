@@ -150,12 +150,12 @@ const Navbar = () => {
           <a href="/careers" className="block dark:text-white py-2 font-custom">
             Career
           </a>
-          <button
-            onClick={handleCallButtonClick}
+          <a
+            href="/login"
             className="bg-primary w-full justify-center flex  font-semibold text-white text-base px-3 py-2 rounded-md mt-4 font-custom"
           >
             Login
-          </button>
+          </a>
         </motion.div>
       )}
     </>
