@@ -28,7 +28,7 @@ function CareersForm() {
     <div className="bg-slate-100 dark:bg-dark_bg py-10">
       <div className="container mx-auto p-6 md:p-10">
         <div className="bg-white dark:bg-slate-800 rounded-lg shadow-lg p-6 md:p-10">
-          <h1 className="text-3xl md:text-5xl font-bold dark:text-white text-center mb-6">
+          <h1 className="text-3xl md:text-5xl font-bold text-slate-500 dark:text-white text-center mb-6">
             Join Our Team
           </h1>
           <p className="text-center text-gray-600 dark:text-gray-300 mb-8">
@@ -36,8 +36,8 @@ function CareersForm() {
             Fill out the form and submit your resume.
           </p>
 
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div>
+          <form onSubmit={handleSubmit} className="space-y-6 text-start">
+            <div className="">
               <label className="block text-sm md:text-base dark:text-gray-300 mb-2">
                 Full Name
               </label>
@@ -100,6 +100,9 @@ function CareersForm() {
                 <option value="designer">UI/UX Designer</option>
                 <option value="qa">Quality Assurance Engineer</option>
                 <option value="devops">DevOps Engineer</option>
+                <option value="devops">Software sales executive</option>
+                <option value="devops">Sales manager </option>
+                <option value="devops">Digital marketing exper </option>
               </select>
             </div>
 
@@ -119,7 +122,7 @@ function CareersForm() {
 
             <button
               type="submit"
-              className="w-full bg-primary hover:bg-yellow-400 text-white font-semibold text-[16px] font-Poppins px-6 py-3 rounded-md transition-all duration-300"
+              className="w-full bg-primary hover:bg-red-400 text-white font-semibold text-[16px] font-Poppins px-6 py-3 rounded-md transition-all duration-300"
             >
               Submit Application
             </button>

@@ -13,7 +13,7 @@ export default {
         float: "float 3s ease-in-out infinite",
       },
       colors: {
-        primary: "#FFBC2F", // Your custom primary color "#2196F3"
+        primary: "#f21010", // Your custom primary color "#2196F3"
         secondary: "#074C83", // Your custom secondary color
         Gray: "#90A2B2", // Your custom Gray color
         bg: "#F5F5F5", // Your custom Gray color
@@ -22,8 +22,7 @@ export default {
       },
 
       fontFamily: {
-        custom: ["Epilogue", "sans-serif"], // 'Epilogue' is the custom font, 'sans-serif' is a fallback
-        Poppins: ["Poppins", "sans-serif"], // 'Epilogue' is the custom font, 'sans-serif' is a fallback
+        // custom: ["Epilogue", "sans-serif"], // 'Epilogue' is the custom font, 'sans-serif' is a fallback
       },
     },
   },

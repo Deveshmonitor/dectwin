@@ -12,8 +12,7 @@ function Home() {
       <Container />
       <Services />
       {/* <Testimonial /> */}
-      <Aboutus />
-      <Footer />{" "}
+      {/* <Aboutus />{" "} */}
       <a
         href="https://wa.me/9454722998"
         className="whatsapp-button absolute bottom-14 right-16"

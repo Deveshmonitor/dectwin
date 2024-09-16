@@ -1,101 +1,77 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion";
-import { useAppContext } from "../AppContext";
+// import { Link } from 'react-router-dom';
+import "./Login.css";
 
-const Login = () => {
-  const { handleLogin } = useAppContext(); // Assuming you have a login handler in your context
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
+function Login() {
+  const [isPanelActive, setIsPanelActive] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (email === "" || password === "") {
-      setError("Please fill in all fields");
-      return;
-    }
-    handleLogin(email, password);
+  // Handler for sign up button
+  const handleSignUp = () => {
+    setIsPanelActive(true);
+  };
+
+  // Handler for sign in button
+  const handleSignIn = () => {
+    setIsPanelActive(false);
   };
 
   return (
-    <div className="flex justify-center items-center h-screen bg-gray-50 dark:bg-gray-900">
-      <motion.div
-        className="w-full max-w-md p-8 space-y-6 bg-white dark:bg-gray-800 shadow-md rounded-lg"
-        initial={{ scale: 0.8, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ duration: 0.5 }}
-      >
-        <h2 className="text-2xl font-bold text-center text-gray-900 dark:text-white">
-          Login
-        </h2>
-        <form onSubmit={handleSubmit} className="space-y-6">
-          <div className="relative">
-            <label
-              htmlFor="email"
-              className="block text-sm font-medium text-gray-700 dark:text-gray-300"
-            >
-              Email
-            </label>
-            <motion.input
-              id="email"
-              type="email"
-              required
-              className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary dark:bg-gray-700 dark:text-white"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              whileFocus={{ scale: 1.05 }}
-            />
+    <div>
+      <div className="login-pannel">
+        <div
+          className={`container-login ${
+            isPanelActive ? "right-panel-active" : ""
+          }`}
+          id="container"
+        >
+          <div className="form-container sign-up-container">
+            <form action="#">
+              <h1>Create Account</h1>
+              <br />
+              <br />
+              <br />
+              <input type="text" placeholder="Name" />
+              <input type="email" placeholder="Email" />
+              <input type="number" placeholder="Number" />
+              <input type="password" placeholder="Password" />
+              <br />
+              <button>Sign Up</button>
+            </form>
           </div>
-
-          <div className="relative">
-            <label
-              htmlFor="password"
-              className="block text-sm font-medium text-gray-700 dark:text-gray-300"
-            >
-              Password
-            </label>
-            <motion.input
-              id="password"
-              type="password"
-              required
-              className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary dark:bg-gray-700 dark:text-white"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              whileFocus={{ scale: 1.05 }}
-            />
+          <div className="form-container sign-in-container">
+            <form action="#">
+              <h1>Sign in</h1>
+              <br />
+              <input type="email" placeholder="Email" />
+              <input type="password" placeholder="Password" />
+              <br />
+              <button>Sign In</button>
+            </form>
           </div>
-
-          {error && (
-            <motion.p
-              className="text-sm text-red-600 dark:text-red-400"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.3 }}
-            >
-              {error}
-            </motion.p>
-          )}
-
-          <div className="flex items-center justify-between">
-            <button
-              type="submit"
-              className="w-full bg-primary text-white font-bold py-2 px-4 rounded-md hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
-              whileHover={{ scale: 1.05 }}
-            >
-              Login
-            </button>
+          <div className="overlay-container">
+            <div className="overlay">
+              <div className="overlay-panel overlay-left">
+                <h1>Welcome Back!</h1>
+                <p>
+                  To keep connected with us please login with your personal info
+                </p>
+                <button className="ghost" id="signIn" onClick={handleSignIn}>
+                  Sign In
+                </button>
+              </div>
+              <div className="overlay-panel overlay-right">
+                <h1>Hello, User!</h1>
+                <p>Enter your personal details and start journey with us</p>
+                <button className="ghost" id="signUp" onClick={handleSignUp}>
+                  Sign Up
+                </button>
+              </div>
+            </div>
           </div>
-
-          <p className="text-sm text-gray-600 dark:text-gray-400 text-center">
-            Don't have an account?{" "}
-            <a href="/signup" className="text-primary hover:underline">
-              Sign Up
-            </a>
-          </p>
-        </form>
-      </motion.div>
+        </div>
+      </div>
     </div>
   );
-};
+}
 
 export default Login;

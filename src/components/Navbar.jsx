@@ -37,12 +37,18 @@ const Navbar = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               <img
-                className="h-11 w-11 rounded-full"
+                className="h-16 w-16 rounded-full"
                 src="../../logo.png"
                 alt=""
               />
-              <a href="/" className="text-primary">
-                Dectwin
+              <a
+                id="logo"
+                style={{ lineHeight: "0.8" }}
+                href="/"
+                className="text-primary font-Inconsolata text-xl uppercase font-extrabold line"
+              >
+                Dectwin <br />
+                Services
               </a>
             </motion.div>
           </div>
@@ -53,32 +59,36 @@ const Navbar = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            <a href="/about" className="hover:underline text-base font-custom">
+            <a
+              href="/about"
+              className=" font-semibold hover:text-red-500 text-base font-custom"
+            >
               About Us
             </a>
-            <a href="/t" className="hover:underline text-base font-custom">
-              Our Team
-            </a>
+
             {/* <a
               href="/services"
-              className="hover:underline text-base font-custom"
+              className=" font-semibold text-base font-custom"
             >
               Blog
             </a> */}
-            <Link to={"/k"} className="hover:underline text-base font-custom">
+            <Link
+              to={"/service#Services"}
+              className=" font-semibold hover:text-red-500 text-base font-custom"
+            >
               Services
             </Link>
             <a
               href="/contact"
-              className="hover:underline text-base font-custom"
+              className=" font-semibold hover:text-red-500 text-base font-custom"
             >
               Contact Us
             </a>
             <a
               href="/careers"
-              className="hover:underline text-base font-custom"
+              className=" font-semibold hover:text-red-500 text-base font-custom"
             >
-              Carrer
+              Career
             </a>
           </motion.div>
 

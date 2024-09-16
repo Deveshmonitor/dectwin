@@ -30,8 +30,8 @@ function Container() {
     const fetchData = () => {
       setTimeout(() => {
         setStats({
-          clients: 1200,
-          users: 5000,
+          clients: 500,
+          users: 1000,
           team: 25,
           products: 8,
         });
@@ -56,13 +56,12 @@ function Container() {
             variants={textVariants}
           >
             <h4 className="text-xl font-Poppins my-2 text-primary font-medium">
-              Indian Best It Company
+              Best Software It Company
             </h4>
 
             <h1 className="text-3xl md:text4-xl my-4 dark:text-white font-custom leading-tight font-bold mb-4 px-6 md:px-0">
-              Welcome To <span className="text-primary">Dectwin World!</span>{" "}
+              Welcome To <span className="text-primary">Dectwin Services</span>{" "}
               <br />
-              <span className="text-primary"> Tech </span> Services.
             </h1>
             <div className="text-xl md:text-xl my-4 dark:text-white font-custom leading-tight font-bold mb-4 px-6 md:px-0">
               <Typewriter
@@ -98,7 +97,7 @@ function Container() {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >
-                Get Starting
+                Services
               </motion.button>
               <a href="https://play.google.com/store/apps/details?id=com.dectwinbilling.dectwinbillingandroid&hl=en-US&ah=rUOTPBKW_U_WZZPk5z6Uj5UJsBQ&pli=1">
                 <motion.button
@@ -138,16 +137,16 @@ function Container() {
               {/* Clients */}
               <div className="flex flex-col items-center">
                 <h3 className="text-5xl font-extrabold text-primary">
-                  {stats.clients}
+                  {stats.clients}+
                 </h3>
                 <p className="text-xl text-gray-700 dark:text-gray-300">
-                  Active Clients
+                  Happy Clients
                 </p>
               </div>
               {/* Team */}
               <div className="flex flex-col items-center">
                 <h3 className="text-5xl font-extrabold text-primary">
-                  {stats.team}
+                  {stats.team}+
                 </h3>
                 <p className="text-xl text-gray-700 dark:text-gray-300">
                   Team Members
@@ -156,7 +155,7 @@ function Container() {
               {/* Users */}
               <div className="flex flex-col items-center">
                 <h3 className="text-5xl font-extrabold text-primary">
-                  {stats.users}
+                  {stats.users}+
                 </h3>
                 <p className="text-xl text-gray-700 dark:text-gray-300">
                   Users
@@ -166,7 +165,7 @@ function Container() {
               {/* Products */}
               <div className="flex flex-col items-center">
                 <h3 className="text-5xl font-extrabold text-primary">
-                  {stats.products}
+                  {stats.products}+
                 </h3>
                 <p className="text-xl text-gray-700 dark:text-gray-300">
                   Products

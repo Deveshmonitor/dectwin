@@ -22,7 +22,7 @@ function ContactUs() {
     <div className="bg-slate-100 dark:bg-dark_bg py-10">
       <div className="container mx-auto px-4 md:px-8">
         <div className="text-center mb-10">
-          <h1 className="text-3xl md:text-5xl font-bold dark:text-white mb-4">
+          <h1 className="text-3xl md:text-5xl font-bold text-slate-500 dark:text-white mb-4">
             Contact Us
           </h1>
           <p className="text-gray-600 dark:text-gray-300 text-base md:text-lg">
@@ -40,7 +40,7 @@ function ContactUs() {
             />
           </div>
           {/* Contact Form */}
-          <div className="w-full md:w-1/2 bg-white dark:bg-slate-800 rounded-lg p-6 shadow-lg">
+          <div className="w-full md:w-1/2  text-left bg-white dark:bg-slate-800 rounded-lg p-6 shadow-lg">
             <h2 className="text-2xl font-semibold text-primary mb-4">
               Get In Touch
             </h2>
@@ -75,6 +75,20 @@ function ContactUs() {
               </div>
               <div>
                 <label className="block text-sm md:text-base dark:text-gray-300 mb-2">
+                  Mobile
+                </label>
+                <input
+                  type="number"
+                  name="number"
+                  value={formData.email}
+                  onChange={handleChange}
+                  className="w-full px-4 py-3 border rounded-md text-sm font-custom"
+                  placeholder="Your Mobile Number"
+                  required
+                />
+              </div>
+              <div>
+                <label className="block text-sm md:text-base dark:text-gray-300 mb-2">
                   Message
                 </label>
                 <textarea
@@ -89,7 +103,7 @@ function ContactUs() {
               </div>
               <button
                 type="submit"
-                className="bg-primary hover:bg-yellow-400 text-white font-semibold text-[16px] font-Poppins px-6 py-3 rounded-md transition-all duration-300"
+                className="bg-primary hover:bg-red-400 text-white font-semibold text-[16px] font-Poppins px-6 py-3 rounded-md transition-all duration-300"
               >
                 Send Message
               </button>

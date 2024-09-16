@@ -10,7 +10,7 @@ const Footer = () => {
       <footer id="footer" className="bg-bg dark:bg-dar_bg_secondary ">
         <div className="container mx-auto md:py-10 p-2 flex flex-col md:flex-row justify-between">
           {/* Left Side - Logo */}
-          <div className="w-full md:w-1/5 mb-6 md:mb-0">
+          <div className="w-full md:w-1/4 pl-6 mb-6 md:mb-0">
             <div className="flex md:justify-start justify-center font-custom items-center space-x-3 font-bold text-5xl mb-4">
               <img
                 className="h-11 w-11 rounded-full"
@@ -90,10 +90,19 @@ const Footer = () => {
                 Privacy & Policy
               </a>
             </div>
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col  md:justify-start justify-center md:items-start items-center gap-3">
               <h1 className="text-black dark:text-white font-bold my-2 text-sm md:text-[16px]">
                 Contact Us
               </h1>
+              <a
+                href="/address"
+                className="text-Gray flex text-left hover:underline font-custom"
+              >
+                <FaLocationDot className="mr-1" />
+                85/47, CY Chintamani Rd,
+                <br /> Darbhanga Colony, George Town, <br />
+                Prayagraj, Uttar Pradesh 211002
+              </a>
               <a
                 href="/phone"
                 className="text-Gray flex items-center hover:underline font-custom"
@@ -106,15 +115,21 @@ const Footer = () => {
                 href="/email"
                 className="text-Gray flex items-center hover:underline font-custom"
               >
-                <IoMdMail className="mr-1" /> test@gmail.com
+                <IoMdMail className="mr-1" /> infodectwinservice@gmail.com
               </a>
-              <a
-                href="/address"
-                className="text-Gray flex  hover:underline font-custom"
-              >
-                <FaLocationDot className="mr-1" />
-                Mandideep distt raisen <br /> Madhya Pradesh india
-              </a>
+            </div>
+            <div className="flex flex-col justify-center items-center">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3049.0521084096627!2d81.85138267462509!3d25.452557577547438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399acabb3e743b69%3A0x372aa9382285c38b!2s85%2F47%2C%20CY%20Chintamani%20Rd%2C%20Darbhanga%20Colony%2C%20George%20Town%2C%20Prayagraj%2C%20Uttar%20Pradesh%20211002!5e1!3m2!1sen!2sin!4v1726334032432!5m2!1sen!2sin"
+                width="300"
+                height="300"
+                style={{
+                  border: 0,
+                }} /* Use double curly braces for inline styles in JSX */
+                allowFullScreen="" /* Change 'allowfullscreen' to 'allowFullScreen' */
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
         </div>
