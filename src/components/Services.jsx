@@ -14,13 +14,13 @@ const servicesData = [
     title: "Software Development",
     description:
       "Creating, designing, testing, and maintaining software applications, ensuring functionality, performance, and scalability to meet user requirements.",
-    icon: "/imgs/react.png",
+    icon: "/imgs/desktop.png",
   },
   {
     title: "Website Development",
     description:
       "Building and maintaining websites using front-end and back-end technologies to deliver user-friendly, responsive, and visually appealing interfaces.",
-    icon: "/imgs/react.png",
+    icon: "/imgs/web.png",
   },
   {
     title: "Digital Marketing",
@@ -32,13 +32,13 @@ const servicesData = [
     title: "Graphic Designing",
     description:
       "Creating visually captivating designs for branding, marketing, and digital platforms, emphasizing aesthetics, usability, and cohesive brand identity.",
-    icon: "/imgs/responsive.png",
+    icon: "/imgs/team.png",
   },
   {
     title: "Cloud Computing Services",
     description:
       "Providing scalable, on-demand cloud infrastructure and services for secure data storage, management, and processing, reducing IT costs and improving accessibility.",
-    icon: "/imgs/web.jpg",
+    icon: "/imgs/cloud.jpg",
   },
 ];
 
@@ -51,7 +51,7 @@ function Services() {
   };
 
   return (
-    <div className="mx-auto py-8 w-full dark:bg-gray-800">
+    <div className="mx-auto py-8  dark:bg-gray-800">
       <motion.div
         ref={ref}
         initial="hidden"
@@ -65,7 +65,10 @@ function Services() {
         </h2>
       </motion.div>
 
-      <div id="Services" className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div
+        id="Services"
+        className=" w-10/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 "
+      >
         {servicesData.map((service, index) => (
           <ServiceCard
             key={index}
@@ -93,11 +96,12 @@ function ServiceCard({ title, description, icon, delay }) {
       ref={ref}
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
+      whileHover={{ scale: 1.1 }}
       variants={variants}
       transition={{ duration: 0.2, delay }}
-      className="bg-white max-w-96 mx-auto dark:bg-gray-900 rounded-lg shadow-md p-6 text-left flex flex-col items-"
+      className="bg-white max-w-96 mx-auto dark:bg-gray-900 rounded-lg shadow-xl p-6 text-left flex flex-col items-"
     >
-      <img className="max-h-60 w-full h-50 " src={icon} alt={title} />
+      <img className="h-50  w-full  " src={icon} alt={title} />
       <h3 className="text-xl font-semibold mb-2 dark:text-white">{title}</h3>
       <p className="text-gray-600 dark:text-gray-300 mb-4">{description}</p>
       {/* <button className="bg-primary items-end text-white py-2 px-4 rounded-md hover:bg-primary-dark transition duration-300">
