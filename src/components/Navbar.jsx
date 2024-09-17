@@ -54,11 +54,17 @@ const Navbar = () => {
           </div>
           {/* Navigation Links (visible on larger screens) */}
           <motion.div
-            className="hidden text-gray-400 md:flex space-x-4 text-gray font-normal text-lg"
+            className="hidden text-gray-950 md:flex space-x-4 text-gray font-normal text-lg"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
+            <a
+              href="/"
+              className=" font-semibold hover:text-red-500 text-base font-custom"
+            >
+              Home
+            </a>
             <a
               href="/about"
               className=" font-semibold hover:text-red-500 text-base font-custom"
@@ -66,12 +72,12 @@ const Navbar = () => {
               About Us
             </a>
 
-            {/* <a
-              href="/services"
+            <a
+              href="/products"
               className=" font-semibold text-base font-custom"
             >
-              Blog
-            </a> */}
+              Products
+            </a>
             <Link
               to={"/service#Services"}
               className=" font-semibold hover:text-red-500 text-base font-custom"
@@ -115,7 +121,7 @@ const Navbar = () => {
                 <FiMenu size={22} className="dark:text-white" />
               )}
             </div>
-            <a href="/signup">
+            <a href="/login">
               <button className="px-4 py-1.5 md:flex hidden text-base font-semibold font-custom text-primary rounded-md">
                 Sign Up
               </button>
@@ -139,20 +145,20 @@ const Navbar = () => {
           className="md:hidden bg-white dark:bg-dark_bg px-6 py-4 transition-all duration-300"
           variants={imageVariants}
         >
-          <a href="/about" className="block dark:text-white py-2 font-custom">
-            About Us
+          <a href="/" className="block dark:text-white py-2 font-custom">
+            Home
           </a>
           <a href="/about" className="block dark:text-white py-2 font-custom">
-            Why Us?
+            About-Us
+          </a>
+          <a href="/service" className="block dark:text-white py-2 font-custom">
+            Services
           </a>
           <a
-            href="/services"
+            href="/products"
             className="block dark:text-white py-2 font-custom"
           >
-            Blog
-          </a>
-          <a href="/about" className="block dark:text-white py-2 font-custom">
-            Journey
+            Products
           </a>
           <a href="/contact" className="block dark:text-white py-2 font-custom">
             Help

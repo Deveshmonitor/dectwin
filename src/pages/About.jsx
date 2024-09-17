@@ -6,10 +6,10 @@ function About() {
       <div className="container mx-auto px-4 md:px-8">
         {/* Hero Section */}
         <div className="text-left mb-10">
-          <h1 className="text-3xl md:text-5xl text-slate-500 font-bold dark:text-white mb-4">
+          <h1 className="text-3xl md:text-5xl text-slate-950 font-bold dark:text-white mb-4">
             About Us
           </h1>
-          <p className="text-gray-600 dark:text-gray-300 text-base md:text-lg">
+          <p className="text-gray-800 dark:text-gray-300 text-base md:text-lg">
             At Dectwin World, we are dedicated to providing innovative software
             solutions that drive business success and technological advancement.
           </p>
@@ -23,7 +23,7 @@ function About() {
           <h2 className="text-2xl font-semibold text-primary mb-4">
             Our Story
           </h2>
-          <p className="text-gray-600 dark:text-gray-300 text-base md:text-lg">
+          <p className="text-gray-800 dark:text-gray-300 text-base md:text-lg">
             Founded in 2017, Dectwin World started with a vision to
             revolutionize the software industry by offering cutting-edge
             solutions tailored to the unique needs of our clients. Our journey
@@ -43,7 +43,7 @@ function About() {
               <h3 className="text-xl font-semibold text-primary mb-2">
                 Our Mission
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 text-base md:text-lg">
+              <p className="text-gray-800 dark:text-gray-300 text-base md:text-lg">
                 Our mission is to deliver high-quality software solutions that
                 empower businesses to achieve their goals, drive innovation, and
                 stay ahead of the competition.
@@ -53,7 +53,7 @@ function About() {
               <h3 className="text-xl font-semibold text-primary mb-2">
                 Our Vision
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 text-base md:text-lg">
+              <p className="text-gray-800 dark:text-gray-300 text-base md:text-lg">
                 We envision a future where technology is seamlessly integrated
                 into every aspect of life, enhancing efficiency, connectivity,
                 and overall quality of life.
@@ -69,7 +69,7 @@ function About() {
           <h2 className="text-2xl font-semibold text-primary mb-4">
             Our Services
           </h2>
-          <p className="text-gray-600 dark:text-gray-300 text-base md:text-lg mb-6">
+          <p className="text-gray-800 dark:text-gray-300 text-base md:text-lg mb-6">
             We offer a wide range of software development services tailored to
             meet the needs of businesses across various industries. Our
             expertise includes web development, mobile app development, UI/UX
@@ -91,7 +91,7 @@ function About() {
           <h2 className="text-xl md:text-2xl  font-semibold text-primary mb-4">
             Get in Touch with Us
           </h2>
-          <p className="text-gray-600 dark:text-gray-300 text-base md:text-lg mb-6">
+          <p className="text-gray-800 dark:text-gray-300 text-base md:text-lg mb-6">
             Have any questions or interested in our services? Feel free to reach
             out to us. We're here to help you!
           </p>

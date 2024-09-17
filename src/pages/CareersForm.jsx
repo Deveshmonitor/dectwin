@@ -28,10 +28,10 @@ function CareersForm() {
     <div className="bg-slate-100 dark:bg-dark_bg py-10">
       <div className="container mx-auto p-6 md:p-10">
         <div className="bg-white dark:bg-slate-800 rounded-lg shadow-lg p-6 md:p-10">
-          <h1 className="text-3xl md:text-5xl font-bold text-slate-500 dark:text-white text-center mb-6">
+          <h1 className="text-3xl md:text-5xl font-bold text-slate-950 dark:text-white text-center mb-6">
             Join Our Team
           </h1>
-          <p className="text-center text-gray-600 dark:text-gray-300 mb-8">
+          <p className="text-center text-gray-900 dark:text-gray-300 mb-8">
             Apply for different roles and be a part of Dectwin's growth journey.
             Fill out the form and submit your resume.
           </p>

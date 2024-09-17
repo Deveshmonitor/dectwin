@@ -93,7 +93,7 @@ function Container() {
             </p>
             <div className="my-10">
               <motion.button
-                className="bg-primary hover:bg-amber-300 cursor-pointer font-semibold text-white text-[16px] font-Poppins px-6 py-4 rounded-md"
+                className="bg-primary hover:bg-rose-600 cursor-pointer font-semibold text-white text-[16px] font-Poppins px-6 py-4 rounded-md"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >

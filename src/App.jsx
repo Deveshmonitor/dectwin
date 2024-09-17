@@ -11,10 +11,10 @@ const SignUp = lazy(() => import("./pages/Signup"));
 const CareersForm = lazy(() => import("./pages/CareersForm"));
 const ContactUs = lazy(() => import("./pages/ContactUs"));
 const About = lazy(() => import("./pages/About"));
-const Services = lazy(() => import("./components/Services"))
+const Services = lazy(() => import("./components/Services"));
+const Products = lazy(() => import("./pages/Products"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const NotFound = lazy(() => import("./pages/NotFound")); // Lazy load NotFound page
-
 
 export default function App() {
   return (
@@ -27,6 +27,7 @@ export default function App() {
           <Route path="/signup" element={<SignUp />} />
           <Route path="/about" element={<About />} />
           <Route path="/service" element={<Services />} />
+          <Route path="/products" element={<Products />} />
           <Route path="/careers" element={<CareersForm />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/policy" element={<PrivacyPolicy />} />

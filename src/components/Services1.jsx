@@ -28,7 +28,7 @@ function Services1() {
               </p>
               <button
                 type="submit"
-                className="bg-primary cursor-pointer my-4 hover:bg-sky-400 font-semibold text-white text-[16px] font-Poppins px-6 py-4 rounded-md"
+                className="bg-primary cursor-pointer my-4 hover:bg-rose-600 font-semibold text-white text-[16px] font-Poppins px-6 py-4 rounded-md"
               >
                 Get Started
               </button>
@@ -54,7 +54,7 @@ function Services1() {
               </p>
               <button
                 type="submit"
-                className="bg-primary cursor-pointer md:text-left my-4 hover:bg-sky-400 font-semibold text-white text-[16px] font-Poppins px-6 py-4 rounded-md"
+                className="bg-primary cursor-pointer md:text-left my-4 hover:bg-rose-600 font-semibold text-white text-[16px] font-Poppins px-6 py-4 rounded-md"
               >
                 Started Product
               </button>

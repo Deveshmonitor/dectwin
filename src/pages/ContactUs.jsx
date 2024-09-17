@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 function ContactUs() {
   const [formData, setFormData] = useState({
@@ -22,10 +23,10 @@ function ContactUs() {
     <div className="bg-slate-100 dark:bg-dark_bg py-10">
       <div className="container mx-auto px-4 md:px-8">
         <div className="text-center mb-10">
-          <h1 className="text-3xl md:text-5xl font-bold text-slate-500 dark:text-white mb-4">
+          <h1 className="text-3xl md:text-5xl font-bold text-slate-950 dark:text-white mb-4">
             Contact Us
           </h1>
-          <p className="text-gray-600 dark:text-gray-300 text-base md:text-lg">
+          <p className="text-gray-900 dark:text-gray-300 text-base md:text-lg">
             We would love to hear from you! Fill out the form below or reach out
             to us through our contact details.
           </p>
@@ -101,12 +102,14 @@ function ContactUs() {
                   required
                 ></textarea>
               </div>
-              <button
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
                 type="submit"
                 className="bg-primary hover:bg-red-400 text-white font-semibold text-[16px] font-Poppins px-6 py-3 rounded-md transition-all duration-300"
               >
                 Send Message
-              </button>
+              </motion.button>
             </form>
           </div>
         </div>
