@@ -15,6 +15,7 @@ const Services = lazy(() => import("./components/Services"));
 const Products = lazy(() => import("./pages/Products"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const NotFound = lazy(() => import("./pages/NotFound")); // Lazy load NotFound page
+import ProductDetails from './pages/ProductDetails';
 
 export default function App() {
   return (
@@ -28,6 +29,7 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/service" element={<Services />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/productdetails/:id" element={<ProductDetails />} />
           <Route path="/careers" element={<CareersForm />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/policy" element={<PrivacyPolicy />} />

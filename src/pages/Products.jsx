@@ -1,40 +1,83 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const products = [
   {
+    id: 1,
     title: "Billing Software",
     description:
-      "Efficient and user-friendly billing software designed to streamline invoicing, track payments, and manage financial data with ease.",
+      "Our Billing Software is designed to simplify financial management. With features like automated invoicing, payment tracking, and real-time reporting, businesses can streamline their billing process. It also supports multiple payment methods and provides detailed insights into financial performance, ensuring efficiency and accuracy. This user-friendly system helps reduce manual errors and saves time by automating routine tasks.",
+    keyFeatures: [
+      "Automated invoicing",
+      "Payment tracking",
+      "Financial reporting",
+      "Multi-payment method support",
+    ],
     image: "/imgs/pro2.jpg",
   },
   {
+    id: 2,
     title: "Face Attendance Software",
     description:
-      "Cutting-edge face recognition software for automated attendance tracking, ensuring accuracy and reducing manual intervention.",
+      "The Face Attendance Software offers a seamless and accurate solution for tracking attendance using advanced facial recognition technology. This system reduces manual interventions, boosts security, and increases the efficiency of managing employee attendance. It integrates easily with existing payroll systems and provides real-time reporting, making it ideal for businesses of any size.",
+    keyFeatures: [
+      "Facial recognition technology",
+      "Automated attendance tracking",
+      "Real-time reporting",
+      "Payroll integration",
+    ],
     image: "/imgs/pro1.jpg",
   },
   {
-    title: "MLM Software: Binary & Multichain",
+    id: 3,
+    title: "MLM Software Multichain",
     description:
-      "Comprehensive MLM software with both binary and multichain support for managing complex network structures and compensation plans.",
+      "Our MLM Software supports both binary and multichain structures, making it ideal for companies looking to manage complex networks and compensation plans. With real-time analytics, multi-tier commission management, and customizable reporting tools, this software empowers businesses to efficiently track member activity and growth.",
+    keyFeatures: [
+      "Binary & multichain support",
+      "Commission management",
+      "Real-time analytics",
+      "Customizable reporting",
+    ],
     image: "/imgs/pro3.png",
   },
   {
+    id: 4,
     title: "Gym Software",
     description:
-      "All-in-one gym management software that tracks memberships, schedules classes, and helps run gym operations efficiently.",
+      "This Gym Software is a comprehensive tool that helps gym owners and managers run their operations smoothly. It offers features like membership tracking, class scheduling, billing, and attendance tracking. The software helps streamline daily operations, manage client information, and ensure a seamless experience for both staff and members.",
+    keyFeatures: [
+      "Membership tracking",
+      "Class scheduling",
+      "Billing and invoicing",
+      "Attendance tracking",
+    ],
     image: "/imgs/pro5.png",
   },
   {
+    id: 5,
     title: "Salon Software",
     description:
-      "Intuitive salon management software to handle appointments, customer data, billing, and inventory for beauty and wellness businesses.",
+      "Our Salon Software simplifies the management of appointments, customer data, billing, and inventory for beauty and wellness businesses. The system offers an intuitive interface, making it easy to manage bookings, payments, and client information, ensuring a smooth customer experience and operational efficiency.",
+    keyFeatures: [
+      "Appointment management",
+      "Customer data tracking",
+      "Inventory management",
+      "Billing and invoicing",
+    ],
     image: "/imgs/pro6.png",
   },
   {
+    id: 6,
     title: "Real Estate Software",
     description:
-      "A powerful solution for real estate agents to manage property listings, customer inquiries, contracts, and sales from a single platform.",
+      "This Real Estate Software is tailored for property agents and agencies, helping them manage property listings, customer inquiries, and sales. It features an easy-to-use interface for tracking contracts, managing listings, and processing sales, allowing agents to focus on customer satisfaction and closing deals efficiently.",
+    keyFeatures: [
+      "Property listing management",
+      "Customer inquiry tracking",
+      "Contract management",
+      "Sales processing",
+    ],
     image: "/imgs/pro4.png",
   },
 ];
@@ -52,18 +95,21 @@ const Products = () => {
             className="bg-white dark:bg-gray-900 rounded-lg shadow-md p-6 flex flex-col items-start"
           >
             <img
-              className="max-h-60 text-left w-full border-2 rounded-md mb-4"
+              className=" h-52 max-h-60 text-left w-full border-2 rounded-md mb-4"
               src={product.image}
             />
-            <h3 className="text-xl font-semibold text-left mb-2 dark:text-white">
+            <h3 className="text-xl font-semibold line-clamp-2 text-left mb-2 dark:text-white">
               {product.title}
             </h3>
-            <p className="text-gray-600 text-left dark:text-gray-300 mb-4">
+            <p className="text-gray-600 text-left line-clamp-6 dark:text-gray-300 mb-4">
               {product.description}
             </p>
-            <button className="bg-primary text-white py-2 px-4 rounded-md hover:bg-primary-dark transition duration-300">
-              Known More
-            </button>
+            <Link
+              to={`/productdetails/${product.id}`}
+              className="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded"
+            >
+              Know More
+            </Link>
           </div>
         ))}
       </div>
