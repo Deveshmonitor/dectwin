@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const products = [
   {
     id: 1,
-    title: "Billing Software",
+    title: "Dectwin Billing Software",
     description:
       "Our Billing Software is designed to simplify financial management. With features like automated invoicing, payment tracking, and real-time reporting, businesses can streamline their billing process. It also supports multiple payment methods and provides detailed insights into financial performance, ensuring efficiency and accuracy. This user-friendly system helps reduce manual errors and saves time by automating routine tasks.",
     keyFeatures: [
